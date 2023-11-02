@@ -13,8 +13,12 @@ const SignUp = () => {
         const password =e.target.password.value;
         console.log(email,password);
         Createuser(email,password)
-        .then(res=>console.log(res.user))
-        .catch(err =>console.log(err))
+        .then(res=>{console.log(res.user)
+        alert('signup')
+        
+        })
+        .catch(err =>alert(err)
+        )
 
     }
     return (
